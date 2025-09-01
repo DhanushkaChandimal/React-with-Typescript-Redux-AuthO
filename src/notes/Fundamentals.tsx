@@ -15,3 +15,30 @@ console.log(mergedObject);
 const array = [1, 2, 3];
 const [a, b, c] = array;
 // a is now 1, b is now 2, c is now 3
+
+
+
+// Defining Functions: Parameters, Return Types, Overloading
+// Parameters:
+function addNumbers(a: number, b: number): number {
+  return a + b;
+}
+console.log(addNumbers(3, 3))
+//Result: 6
+
+// Return Types:
+function calculateArea(radius: number): number {
+  return Math.PI * radius * radius;
+}
+
+// Overloading:
+function greet(name: string): void;
+function greet(firstName: string, lastName: string): void;
+
+function greet(arg1: string, arg2?: string): void {
+  if (arg2) {
+    console.log(`Hello, ${arg1} ${arg2}!`);
+  } else {
+    console.log(`Hello, ${arg1}!`);
+  }
+}
