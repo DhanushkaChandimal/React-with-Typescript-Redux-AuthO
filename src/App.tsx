@@ -1,6 +1,7 @@
 import './App.css'
 import TodoList from './components/TodoList';
 import AgeCalculator from './components/AgeCalculator';
+import TaskRenderer from './components/TaskRenderer';
 
 function App(){
 
@@ -65,6 +66,7 @@ function App(){
     <div>
       <TodoList />
       <AgeCalculator />
+      <TaskRenderer />
     </div>
   );
 }
