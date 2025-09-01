@@ -17,6 +17,20 @@ function App(){
     age: 26,
   };
 
+  const shapeShifter: any = {
+    name: 24,
+    age: 'Alex'
+  }
+
+  const printToConsole = (value: string): void => {
+    console.log(value);
+  }
+
+  const cat: null = null;
+  const dog: undefined = undefined;
+  console.log('cat ',cat);
+  console.log('dog',dog);
+
   //Render the typed data to the screen
   return (
     <div>
@@ -29,6 +43,12 @@ function App(){
       <p>Fruit 1: {fruits[0]}</p>
       <p>Fruit 2: {fruits[1]}</p>
       <p>Fruit 3: {fruits[2]}</p>
+
+      <button onClick={() => printToConsole('Hello, TypeScript!')}>Click me</button>
+      <p>name: {shapeShifter.name}</p>
+      <p>age: {shapeShifter.age}</p>
+      <p>cat: {cat}</p>
+      <p>dog: {dog}</p>
     </div>
   );
 }
