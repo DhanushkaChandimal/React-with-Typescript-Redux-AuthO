@@ -1,5 +1,6 @@
 import './App.css'
 import TodoList from './components/TodoList';
+import AgeCalculator from './components/AgeCalculator';
 
 function App(){
 
@@ -63,6 +64,7 @@ function App(){
     // </div>
     <div>
       <TodoList />
+      <AgeCalculator />
     </div>
   );
 }
