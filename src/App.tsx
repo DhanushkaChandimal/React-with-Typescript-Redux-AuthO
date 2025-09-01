@@ -31,6 +31,16 @@ function App(){
   console.log('cat ',cat);
   console.log('dog',dog);
 
+  // define a type for basic data types
+  type Name = string;
+  type Age = number;
+
+  // Union Types
+  type StringOrNumber = string | number;
+
+  // Array Types
+  type NumberArray = number[];
+
   //Render the typed data to the screen
   return (
     <div>
